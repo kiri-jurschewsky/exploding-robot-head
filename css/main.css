@@ -23,22 +23,50 @@ body {
   position: relative;
   left: 50%;
   height: 240px;
-  transform: translate();
-  padding: .5rem 0 0 0;
+  padding: .5em 0 0 0;
+  right: .05%;
+  transform: translate(-50%, -.05%);
 }
 
 .robot-body {
   width: 320px;
+  bottom: 0;
+  position: absolute;
 }
 
 .robot-brain {
   width: 46px;
   position: absolute;
-  top: 13%;
+  top: 32%;
   left: 42.5%;
 }
 
-.robot-head-right,
+.robot-head-right {
+  width: 125px;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+
+}
+
 .robot-head-left {
   width: 125px;
+  right: 50%;
+  top: 5%;
+  position: absolute;
+}
+
+.robot:hover .robot-head-right {
+  top: 5%;
+  left: 60%;
+}
+
+.robot:hover .robot-head-left {
+  top: 5%;
+  left: 1%;
+}
+
+.robot:hover .robot-brain {
+  top: 10%;
+  left: 42.5%;
 }
